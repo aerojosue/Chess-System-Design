@@ -15,6 +15,13 @@ public class ChessPiece extends Piece {
 	public Color getColor() {
 		return color;
 	}
-	
-	
+
+	public String typeOfColor() {
+		if (color == Color.BLACK) {
+			return "\u001B[30m";
+		} else {
+			return "\u001B[37m";
+		}
+	}
+
 }
